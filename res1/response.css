@@ -1,0 +1,131 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-image: url("images/bg-intro-desktop.png");
+  background-color: hsl(0deg 100% 74%);
+}
+.main {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 90%;
+  float: left;
+  align-items: center;
+  height: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  column-gap: 4rem;
+}
+.leftbox {
+  display: flex;
+  text-align: center;
+  width: 50%;
+  color: white;
+  padding: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+h1 {
+  font-weight: 700;
+  padding: 3rem;
+  text-align: center;
+  font-size: 40px;
+}
+#p1 {
+  font-weight: 500px;
+  font-size: 16px;
+}
+.rightbox {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 2rem;
+}
+.up {
+  background-color: hsl(247deg 32% 48%);
+  color: aliceblue;
+  border: 2px;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+.tb2 {
+  background-color: hsl(0deg 0% 100%);
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+.t {
+  background-color: hsl(0deg 0% 100%);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1x;
+  width: 100%;
+  border-color: antiquewhite;
+  margin: 5px;
+}
+.p2 {
+  text-align: center;
+  color: rgb(190, 185, 185);
+}
+#bt1 {
+  background-color: hsl(153deg 59% 51%);
+  color: white;
+}
+#tas {
+  color: rgb(250, 91, 91);
+  text-decoration: none;
+}
+@media screen and (max-width: 700px) {
+  .leftbox,
+  .rightbox {
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+  }
+  .main {
+    margin: 0.5rem;
+    padding: 20px;
+    column-gap: 40px;
+    gap: 10px;
+    column-gap: 0ch;
+  }
+  .t {
+    padding: 0.5rem;
+    margin: 2px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url("images/bg-intro-mobile.png");
+  }
+  .leftbox,
+  .rightbox {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+input:required:focus:valid {
+  background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg")
+    no-repeat 95% 50% lightgreen;
+  background-size: 25px;
+  border: 1px solid lightgreen;
+  outline: none;
+}
+input:focus:invalid {
+  background: url("images/icon-error.svg") no-repeat 95% 50%;
+  background-size: 25px;
+}
+input:required:focus:invalid {
+  border: 1px solid red;
+  outline: none;
+}
